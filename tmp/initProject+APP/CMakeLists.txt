@@ -42,6 +42,7 @@ target_include_directories(${CONTEXT} PUBLIC
     ${SOLUTION_ROOT}/Lib
   >
   ${CMSIS_PACK_ROOT}/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+  ${SOLUTION_ROOT}/System
   ${SOLUTION_ROOT}/Start
   ${SOLUTION_ROOT}/../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Project/STM32F10x_StdPeriph_Template
   ${SOLUTION_ROOT}/../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc
@@ -103,6 +104,7 @@ include("groups.cmake")
 include("components.cmake")
 
 target_link_libraries(${CONTEXT} PUBLIC
+  Group_System
   Group_Start
   Group_User
   Group_Lib

@@ -87,6 +87,12 @@ build:
     script: RTE/Device/STM32F103C8/ac6_linker_script.sct.src
     regions: RTE/Device/STM32F103C8/regions_STM32F103C8.h
   groups:
+    - group: System
+      files:
+        - file: System/Delay.c
+          category: sourceC
+        - file: System/Delay.h
+          category: header
     - group: Start
       files:
         - file: Start/core_cm3.c

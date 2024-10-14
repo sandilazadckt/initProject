@@ -1,5 +1,23 @@
 # groups.cmake
 
+# group System
+add_library(Group_System OBJECT
+  "${SOLUTION_ROOT}/System/Delay.c"
+)
+target_include_directories(Group_System PUBLIC
+  $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>
+  ${SOLUTION_ROOT}/System
+)
+target_compile_definitions(Group_System PUBLIC
+  $<TARGET_PROPERTY:${CONTEXT},INTERFACE_COMPILE_DEFINITIONS>
+)
+target_compile_options(Group_System PUBLIC
+  $<TARGET_PROPERTY:${CONTEXT},INTERFACE_COMPILE_OPTIONS>
+)
+target_link_libraries(Group_System PUBLIC
+  ${CONTEXT}_ABSTRACTIONS
+)
+
 # group Start
 add_library(Group_Start OBJECT
   "${SOLUTION_ROOT}/Start/startup_stm32f10x_md.s"

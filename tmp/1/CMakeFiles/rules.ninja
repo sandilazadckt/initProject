@@ -21,6 +21,16 @@ rule C_EXECUTABLE_LINKER__initProject.2bAPP_
 
 
 #############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__Group_System_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}c:\Users\KAMALH~1\VCPKG~1\ARTIFA~1\2139c4c6\COMPIL~1.ARM\622~1.0\bin\\armclang.exe --target=arm-arm-none-eabi $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
 # Rule for compiling ASM files.
 
 rule ASM_COMPILER__Group_Start_unscanned_

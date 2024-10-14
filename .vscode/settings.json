@@ -2,5 +2,14 @@
     "stm32-for-vscode.openOCDPath": false,
     "clangd.arguments": [
         "--compile-commands-dir=f:\\STM32\\projectSetup\\out\\initProject\\APP"
+    ],
+    "cmsis-csolution.actions": [
+        {
+            "path": "initProject.csolution.yml",
+            "target": "APP",
+            "config": {
+                "run": "Flash Device"
+            }
+        }
     ]
 }
