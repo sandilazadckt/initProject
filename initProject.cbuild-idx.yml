@@ -1,0 +1,15 @@
+build-idx:
+  generated-by: csolution version 2.6.0
+  csolution: initProject.csolution.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: initProject.cproject.yml
+  cbuilds:
+    - cbuild: initProject+APP.cbuild.yml
+      project: initProject
+      configuration: +APP
+      messages:
+        info:
+          - initProject.cbuild-set.yml - file is already up-to-date
+          - initProject.cbuild-pack.yml - file is already up-to-date
+          - initProject+APP.cbuild.yml - file is already up-to-date

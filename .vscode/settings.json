@@ -1,0 +1,6 @@
+{
+    "stm32-for-vscode.openOCDPath": false,
+    "clangd.arguments": [
+        "--compile-commands-dir=f:\\STM32\\projectSetup\\out\\initProject\\APP"
+    ]
+}

@@ -1,0 +1,111 @@
+project:
+  packs:
+    - pack: Keil::STM32F1xx_DFP
+  setups:
+    - setup: Options for APP
+      add-path:
+        - Start
+        - User
+        - Lib
+      debug: "on"
+      define:
+        - USE_STDPERIPH_DRIVER
+      misc:
+        - C:
+            - -std=c99
+          C-CPP:
+            - -fno-rtti
+            - -funsigned-char
+            - -fshort-enums
+            - -fshort-wchar
+            - -ffunction-sections
+            - -Wall
+            - -Wextra
+            - -Wno-packed
+            - -Wno-reserved-id-macro
+            - -Wno-unused-macros
+            - -Wno-documentation-unknown-command
+            - -Wno-documentation
+            - -Wno-license-management
+            - -Wno-parentheses-equality
+          CPP:
+            - -xc++
+            - -std=c++11
+          ASM:
+            - -masm=auto
+          Link:
+            - --map
+            - --load_addr_map_info
+            - --xref
+            - --callgraph
+            - --symbols
+            - --info sizes
+            - --info totals
+            - --info unused
+            - --info veneers
+            - --strict
+            - --summary_stderr
+            - --info summarysizes
+  groups:
+    - group: Start
+      files:
+        - file: Start/core_cm3.c
+        - file: Start/core_cm3.h
+        - file: Start/stm32f10x.h
+        - file: Start/system_stm32f10x.c
+        - file: Start/system_stm32f10x.h
+        - file: Start/startup_stm32f10x_md.s
+    - group: User
+      files:
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Project/STM32F10x_StdPeriph_Template/stm32f10x_conf.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Project/STM32F10x_StdPeriph_Template/stm32f10x_it.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Project/STM32F10x_StdPeriph_Template/stm32f10x_it.h
+        - file: User/main.c
+    - group: Lib
+      files:
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/misc.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_adc.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_bkp.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_can.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_cec.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_crc.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_dac.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_dbgmcu.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_dma.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_exti.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_flash.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_fsmc.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_gpio.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_i2c.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_iwdg.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_pwr.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_rcc.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_rtc.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_sdio.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_spi.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_tim.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_usart.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/inc/stm32f10x_wwdg.h
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/misc.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_adc.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_bkp.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_can.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_cec.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_crc.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_dac.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_dbgmcu.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_dma.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_exti.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_flash.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_fsmc.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_gpio.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_i2c.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_iwdg.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_pwr.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_rcc.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_rtc.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_sdio.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_spi.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_tim.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_usart.c
+        - file: ../../en.stsw-stm32054_v3-6-0/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10X/src/stm32f10x_wwdg.c

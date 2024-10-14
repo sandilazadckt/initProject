@@ -1,0 +1,7 @@
+F:/STM32/projectSetup/tmp/1/CMakeFiles/database.dir
+F:/STM32/projectSetup/tmp/1/CMakeFiles/initProject+APP.dir
+F:/STM32/projectSetup/tmp/1/CMakeFiles/Group_Start.dir
+F:/STM32/projectSetup/tmp/1/CMakeFiles/Group_User.dir
+F:/STM32/projectSetup/tmp/1/CMakeFiles/Group_Lib.dir
+F:/STM32/projectSetup/tmp/1/CMakeFiles/edit_cache.dir
+F:/STM32/projectSetup/tmp/1/CMakeFiles/rebuild_cache.dir

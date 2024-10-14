@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "F:/STM32/projectSetup/tmp/CMakeFiles/initProject+APP-configure"
+		},
+		{
+			"file" : "F:/STM32/projectSetup/tmp/CMakeFiles/initProject+APP-configure.rule"
+		},
+		{
+			"file" : "F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-configure.rule"
+		},
+		{
+			"file" : "F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-patch.rule"
+		},
+		{
+			"file" : "F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-update.rule"
+		},
+		{
+			"file" : "F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-download.rule"
+		},
+		{
+			"file" : "F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"initProject+APP"
+		],
+		"name" : "initProject+APP-configure"
+	}
+}

@@ -1,0 +1,6 @@
+F:/STM32/projectSetup/tmp/CMakeFiles/initProject+APP.dir
+F:/STM32/projectSetup/tmp/CMakeFiles/initProject+APP-build.dir
+F:/STM32/projectSetup/tmp/CMakeFiles/initProject+APP-configure.dir
+F:/STM32/projectSetup/tmp/CMakeFiles/initProject+APP-database.dir
+F:/STM32/projectSetup/tmp/CMakeFiles/edit_cache.dir
+F:/STM32/projectSetup/tmp/CMakeFiles/rebuild_cache.dir

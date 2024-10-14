@@ -1,0 +1,14 @@
+# Target labels
+ initProject+APP
+# Source files and their labels
+F:/STM32/projectSetup/tmp/CMakeFiles/initProject+APP
+F:/STM32/projectSetup/tmp/CMakeFiles/initProject+APP.rule
+F:/STM32/projectSetup/tmp/CMakeFiles/initProject+APP-complete.rule
+F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-build.rule
+F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-configure.rule
+F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-download.rule
+F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-install.rule
+F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-mkdir.rule
+F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-patch.rule
+F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-test.rule
+F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-update.rule

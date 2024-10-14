@@ -1,0 +1,24 @@
+# ninja log v6
+25	82	7505971029940558	initProject+APP/src/initProject+APP-stamp/initProject+APP-mkdir	7f2c523a8a5dcd83
+25	82	7505971029940558	F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-mkdir	7f2c523a8a5dcd83
+160	213	7505971031265819	initProject+APP/src/initProject+APP-stamp/initProject+APP-update	6991e258ca78d4ef
+83	160	7505971030715786	initProject+APP/src/initProject+APP-stamp/initProject+APP-download	9f5ecf0a01c5e583
+160	213	7505971031265819	F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-update	6991e258ca78d4ef
+83	160	7505971030715786	F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-download	9f5ecf0a01c5e583
+214	263	7505971031770623	initProject+APP/src/initProject+APP-stamp/initProject+APP-patch	d3d7fd0ee9b283ab
+214	263	7505971031770623	F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-patch	d3d7fd0ee9b283ab
+263	4432	7505971073444888	initProject+APP/src/initProject+APP-stamp/initProject+APP-configure	3800ab41b34b3607
+263	4432	7505971073444888	F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-configure	3800ab41b34b3607
+4432	4534	7505971073490112	initProject+APP/src/initProject+APP-stamp/initProject+APP-database	f8233fe9b055d727
+4432	4534	7505971073490112	F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-database	f8233fe9b055d727
+23	497	7505971678765248	initProject+APP/src/initProject+APP-stamp/initProject+APP-build	36dabf27370cb689
+23	497	7505971678765248	F:/STM32/projectSetup/out/initProject/APP/initProject.axf	36dabf27370cb689
+23	497	7505971678765248	F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-build	36dabf27370cb689
+497	521	7505971683504053	initProject+APP/src/initProject+APP-stamp/initProject+APP-install	845505f42c870ab8
+497	521	7505971683504053	F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-install	845505f42c870ab8
+521	558	7505971684076913	initProject+APP/src/initProject+APP-stamp/initProject+APP-test	e6b88a8b4b11dcf8
+521	558	7505971684076913	F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-test	e6b88a8b4b11dcf8
+558	623	7505971684715918	CMakeFiles/initProject+APP-complete	ee15b7995ba3361a
+558	623	7505971684715918	initProject+APP/src/initProject+APP-stamp/initProject+APP-done	ee15b7995ba3361a
+558	623	7505971684715918	F:/STM32/projectSetup/tmp/CMakeFiles/initProject+APP-complete	ee15b7995ba3361a
+558	623	7505971684715918	F:/STM32/projectSetup/tmp/initProject+APP/src/initProject+APP-stamp/initProject+APP-done	ee15b7995ba3361a
